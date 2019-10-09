@@ -4,16 +4,16 @@ int outpin3 = 9;
 int outpin4 = 8;
 void setup()
 {
-  pinMode(12,OUTPUT);
-  pinMode(11,OUTPUT);
-  pinMode(9,OUTPUT);
-  pinMode(8,OUTPUT);
+  pinMode(12,OUTPUT);//setting pin 12 to HIGH
+  pinMode(11,OUTPUT);//setting pin 11 to HIGH
+  pinMode(9,OUTPUT);//setting pin 9 to HIGH
+  pinMode(8,OUTPUT);//setting pin 8 to HIGH
 }
 
 void loop()
 {
-    analogWrite(outpin1,analogRead(A0));
-    analogWrite(outpin2,analogRead(A1));
-    analogWrite(outpin3,analogRead(A3));
-    analogWrite(outpin4,analogRead(A4)); 
+    analogWrite(outpin1,analogRead(A0));//read the input pin A0
+    analogWrite(outpin2,analogRead(A1));//read the input pin A1
+    analogWrite(outpin3,analogRead(A3));//read the inout pin A3
+    analogWrite(outpin4,analogRead(A4)); //read the input pin A4
 }
